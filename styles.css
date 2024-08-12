@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F7FA;
+}
+
+/* Login Screen Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFF;
+}
+
+.login-left {
+    flex: 1;
+    background-color: #23224A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration {
+    width: 70%; /* Adjusted width for better scaling */
+    max-width: 400px;
+}
+
+.login-right {
+    flex: 1;
+    padding: 40px; /* Increased padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F5F7FA; /* Match background color */
+}
+
+h2 {
+    color: #1D1D3E; /* Darker text color for better readability */
+    font-size: 24px;
+    margin-bottom: 30px; /* Adjusted spacing */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px; /* Increased space for clarity */
+    font-weight: bold;
+    color: #333; /* Darker label color */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.input-group input:focus {
+    border-color: #1D1D3E;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #333; /* Match text color */
+}
+
+.terms a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px; /* Rounded button corners */
+    background-color: #1D1D3E;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #333356;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-left, .login-right {
+        flex: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .illustration {
+        width: 80%; /* Adjusted for smaller screens */
+        max-width: 300px;
+    }
+}

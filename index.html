@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wi-Jungle Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-left">
+            <img src="illustration.png" alt="Illustration" class="illustration">
+        </div>
+        <div class="login-right">
+            <h2>Let’s Secure Your PC</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="cloud">Cloud</label>
+                    <input type="text" id="cloud" placeholder="Cloud" required>
+                </div>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <label class="terms">
+                    <input type="checkbox" required> By continuing you agree to &nbsp; <a href="#">Terms & Conditions</a>&nbsp; and &nbsp; <a href="#">Privacy Policy</a>
+                </label>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
